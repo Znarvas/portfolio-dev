@@ -19,20 +19,27 @@
       href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/761e4c8e5c.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Document</title>
   </head>
   <body>
     <!-- Nav -->
+
     <section class="main-page">
       <nav>
-        <div></div>
-        <ul>
+        <ul id="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#tools-id">Tools</a></li>
           <li><a href="#projects-id">Projects</a></li>
           <li><a href="#contact-id">Contact me</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
       <div class="main-area" id="home">
         <div class="main-text">
@@ -86,7 +93,7 @@
       <h3 class="tools-title" id="tools-id">Tools I use</h3>
       <div class="toolsContainer">
         <div class="tools-img">
-          <img src="./images/logo-html5.png" />
+          <img src="../images/logo-html5.png" />
         </div>
         <div class="tools-img">
           <img src="../images/logo-css3.png" />
@@ -110,18 +117,18 @@
           <img src="../images/logo-expressjs.png" />
         </div>
         <div class="tools-img">
-          <img src="./images/logo-heroku.png" />
+          <img src="../images/logo-heroku.png" />
         </div>
         <div class="tools-img">
-          <img src="./images/logo-gitlab-ci-cd.png" />
+          <img src="../images/logo-gitlab-ci-cd.png" />
         </div>
         <div class="tools-img">
-          <img src="./images/logo-bootstrap.png" />
+          <img src="../images/logo-bootstrap.png" />
         </div>
       </div>
     </section>
     <!-- Projects -->
-    <section class="sub-section-alternative" id="projects">
+    <section class="sub-section-alternative" id="projects-id">
       <h2 class="project-title">Projects</h2>
       <div class="project-container">
         <div class="project-card">
@@ -133,7 +140,7 @@
           </p>
           <hr />
           <p class="subtext">
-            <a class="project-link" href="https://www.github.com/kubowania"
+            <a class="project-link" href="https://tindahan-app.herokuapp.com/"
               >View here</a
             >
           </p>
@@ -147,9 +154,7 @@
           </p>
           <hr />
           <p class="subtext">
-            <a class="project-link" href="https://www.github.com/kubowania"
-              >View here</a
-            >
+            <a class="project-link" href="">View here</a>
           </p>
         </div>
         <div class="project-card">
@@ -165,9 +170,7 @@
           </p>
           <hr />
           <p class="subtext">
-            <a class="project-link" href="https://www.github.com/kubowania"
-              >View here</a
-            >
+            <a class="project-link" href="">View here</a>
           </p>
         </div>
         <div class="project-card">
@@ -183,9 +186,7 @@
           </p>
           <hr />
           <p class="subtext">
-            <a class="project-link" href="https://www.github.com/kubowania"
-              >View here</a
-            >
+            <a class="project-link" href="">View here</a>
           </p>
         </div>
       </div>
