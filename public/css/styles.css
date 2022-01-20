@@ -18,16 +18,19 @@ section {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style-type: none;
   width: 500px;
   justify-content: space-around;
   font-size: 30px;
+  text-transform: uppercase;
 }
-a {
+nav a {
   color: inherit;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
@@ -36,14 +39,14 @@ a:hover {
   text-decoration-color: rgb(255, 52, 52);
 }
 .main-page {
-  background-color: #1c1d25;
+  background-color: #000000;
   height: 100vh;
   color: white;
   font-size: 40px;
 }
 
 .aboutMe {
-  background-color: #1c1d25;
+  background-color: #000000;
   width: 100vw;
   height: 100vh;
   color: whitesmoke;
@@ -61,6 +64,12 @@ a:hover {
 p {
   font-size: 30px;
   font-weight: 300;
+}
+.about-p {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 4rem;
 }
 
 .main-text {
@@ -106,7 +115,7 @@ p {
 }
 
 .tools-section {
-  background-color: #1c1d25;
+  background-color: #000000;
   height: 100vh;
   width: 100vw;
 }
@@ -143,13 +152,23 @@ p {
 }
 
 /* Project Section */
-.project-title {
+.section-title {
   font-size: 40px;
-  color: white;
+  color: rgb(5, 0, 0);
   padding-bottom: 2rem;
   margin-top: 0px;
   text-align: center;
   margin-top: 20px;
+}
+
+.project-title {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0px;
+  text-align: center;
+  margin-top: 5px;
 }
 .sub-section-alternative {
   background-color: #ffffff;
@@ -159,16 +178,26 @@ p {
   font-size: 40px;
 }
 .project-card {
-  width: 300px;
-  height: 500px;
+  width: 250px;
+  height: 400px;
   background-color: #ffffff;
   box-shadow: 5px 5px 20px rgb(12, 0, 0);
   margin: 10px;
+  text-align: center;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
 }
 
 .project-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -181,7 +210,14 @@ p {
 .project-image {
   margin-top: 25px;
   width: 250px;
-  border-radius: 125px;
+  border-radius: 100px;
+  border-width: 10px;
+  background-color: black;
+}
+.subtext {
+  font-size: 20px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 
 hr {
@@ -234,7 +270,7 @@ hr {
   padding-bottom: 2rem;
   margin-top: 0px;
 }
-
+/*
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -244,12 +280,7 @@ hr {
   background-color: rgb(146, 128, 128);
 }
 
-.project-card:hover {
-  transform: scale(1.05);
-  outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;
-}
+
 
 .projects {
   display: flex;
@@ -283,18 +314,19 @@ hr {
 
 /* Form Section */
 .form-section {
-  background-color: #000000;
   height: 100vh;
   width: 100vw;
 
   font-size: 40px;
 }
 .form-title {
-  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: rgb(5, 0, 0);
+  padding-bottom: 1rem;
+  margin-top: 0px;
   text-align: center;
-  padding-top: 2rem;
+  margin-top: 20px;
   background-color: #fff;
-  color: #1c1d25;
 }
 
 .contact-div {
@@ -302,7 +334,7 @@ hr {
   position: relative;
   align-content: center;
   height: 100vh;
-  background-color: rgb(75, 71, 71);
+  background-color: rgb(255, 255, 255);
 }
 .contact-form {
   position: absolute;
@@ -311,21 +343,37 @@ hr {
   width: 80%;
   height: 600px;
 }
-input,
+input[type="text"],
+input[type="email"] {
+  height: 40px;
+  width: 100%;
+  margin-top: 2rem;
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+}
 textarea {
   width: 100%;
   margin-top: 2rem;
   border: none;
   border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 
 .submit {
   border: 1px solid black;
   padding: 1rem;
   text-align: center;
-  background-color: #fff;
+  background-color: black;
   cursor: pointer;
+  color: white;
+  border-radius: 32px;
 }
 .submit:hover {
   opacity: 0.6;
+}
+::placeholder {
+  color: #1c1d25;
 }

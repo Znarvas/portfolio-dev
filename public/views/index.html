@@ -31,6 +31,7 @@
 
     <section class="main-page">
       <nav>
+        <div></div>
         <ul id="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#tools-id">Tools</a></li>
@@ -43,9 +44,11 @@
       </nav>
       <div class="main-area" id="home">
         <div class="main-text">
-          <h1>Zac Narvas</h1>
-          <p>Full Stack Developer</p>
-          <div class="button">About me</div>
+          <h1>Hi, I'm Zac Narvas</h1>
+          <p>
+            I'm a full stack web developer who loves cooking and programming
+          </p>
+          <div class="button"><a href="#about-id"></a>About me</div>
         </div>
         <div class="socials">
           <div>
@@ -83,9 +86,15 @@
         </div>
       </div>
     </section>
-    <section class="aboutMe">
+    <section class="aboutMe" id="about-id">
       <h3 class="About-title">About me</h3>
-      I'm Zach Narvas
+      <p class="about-p">
+        I was a cook for a few years then explored a little bit of
+        entrepreneurship I learned alot but I wanted to pursue tech and
+        programming beacause I know it will continuously push me to be
+        knowledgeable and its something that will help my growth career wise and
+        as an individual.
+      </p>
       <div class="aboutMeContainer"></div>
     </section>
     <!-- Tools -->
@@ -129,11 +138,16 @@
     </section>
     <!-- Projects -->
     <section class="sub-section-alternative" id="projects-id">
-      <h2 class="project-title">Projects</h2>
+      <h2 class="section-title">Projects</h2>
       <div class="project-container">
         <div class="project-card">
-          <img class="project-image" src="" alt="Project One Image" />
-          <h3>Project One</h3>
+          <img
+            class="project-image"
+            src="../images/tindahan.png"
+            alt="Project One Image"
+          />
+          <h3 class="project-title">E-commerce Capstone project</h3>
+          <hr />
           <p class="subtext">
             This is my project and some text about it. I enjoyed making this
             project.
@@ -147,7 +161,8 @@
         </div>
         <div class="project-card">
           <img class="project-image" src="" alt="Project One Image" />
-          <h3>Project Two</h3>
+          <h3 class="project-title">Project Two</h3>
+          <hr />
           <p class="subtext">
             This is my project and some text about it. I enjoyed making this
             project.
@@ -163,7 +178,8 @@
             src="src/images/project3.png"
             alt="Project One Image"
           />
-          <h3>Project Three</h3>
+          <h3 class="project-title">Project Three</h3>
+          <hr />
           <p class="subtext">
             This is my project and some text about it. I enjoyed making this
             project.
@@ -179,7 +195,8 @@
             src="src/images/Project4.jpg"
             alt="Project One Image"
           />
-          <h3>Project Four</h3>
+          <h3 class="project-title">Project Four</h3>
+          <hr />
           <p class="subtext">
             This is my project and some text about it. I enjoyed making this
             project.
@@ -192,13 +209,13 @@
       </div>
     </section>
     <!-- Contact -->
-    <section class="form-section" id="contact-id">
+    <footer class="form-section" id="contact-id">
       <h2 class="form-title">Contact me</h2>
       <div class="contact-div">
         <form method="POST" action="email" class="contact-form" id="form">
           <input type="text" id="fullName" placeholder="Full name" required />
           <input type="email" id="email" placeholder="Email" required />
-          <input type="test" id="subject" placeholder="Subject" required />
+          <input type="text" id="subject" placeholder="Subject" required />
           <textarea
             id="message"
             placeholder="Message"
@@ -208,9 +225,7 @@
           <input type="submit" value="Send Message" class="submit" />
         </form>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer></footer>
+    </footer>
   </body>
   <script src="../js/app.js"></script>
 </html>
