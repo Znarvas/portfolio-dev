@@ -6,7 +6,8 @@
 // }
 
 // hamburgerButton.addEventListener("click", toggleButton);
-
+// const dotenv = require("dotenv");
+// dotenv.config();
 const contactForm = document.querySelector(".contact-form");
 let name = document.getElementById("fullName");
 let email = document.getElementById("email");
