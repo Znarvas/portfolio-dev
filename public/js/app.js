@@ -1,11 +1,11 @@
-// const hamburgerButton = document.getElementById("hamburger");
-const navList = document.getElementById("nav-list");
+//  const hamburgerButton = document.getElementById("hamburger");
+// const navList = document.getElementById("nav-list");
 
-function toggleButton() {
-  navList.classList.toggle("show");
-}
+// function toggleButton() {
+//   navList.classList.toggle("show");
+// }
 
-hamburgerButton.addEventListener("click", toggleButton);
+// hamburgerButton.addEventListener("click", toggleButton);
 
 const contactForm = document.querySelector(".contact-form");
 let name = document.getElementById("fullName");

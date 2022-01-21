@@ -43,5 +43,5 @@ app.post("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Server is listening to port 5000");
+  console.log("Server is listening to port + PORT");
 });
