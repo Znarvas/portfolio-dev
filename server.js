@@ -18,10 +18,10 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   console.log(req.body);
   const transporter = nodemailer.createTransport({
-    // service: "gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
+    service: "gmail",
+    // host: "smtp.gmail.com",
+    // port: 465,
+    // secure: true,
 
     auth: {
       // user: process.env.EMAIL,
