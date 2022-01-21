@@ -24,10 +24,8 @@ app.post("/", (req, res) => {
     // secure: true,
 
     auth: {
-      // user: process.env.EMAIL,
-      // pass: process.env.PASSWORD,
-      user: "narvaszach@gmail.com",
-      pass: "tanginathis",
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
