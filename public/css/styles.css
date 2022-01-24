@@ -177,7 +177,6 @@ p {
   width: 100vw;
   color: rgb(0, 0, 0);
   font-size: 40px;
-  overflow: hidden;
 }
 .project-card {
   width: 250px;
@@ -196,6 +195,8 @@ p {
 
 .project-container {
   display: flex;
+  max-height: 500px;
+  height: min-content;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
@@ -206,7 +207,6 @@ p {
   .project-container {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
   }
 }
 
