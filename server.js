@@ -27,6 +27,9 @@ app.post("/", (req, res) => {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   const mailOptions = {
