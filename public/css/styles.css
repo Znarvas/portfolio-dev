@@ -67,9 +67,8 @@ p {
 }
 .about-p {
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-top: 4rem;
+  padding: 8rem 2rem 5rem 2rem;
+  margin-top: auto;
   color: black;
 }
 
