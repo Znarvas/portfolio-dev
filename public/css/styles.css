@@ -46,7 +46,7 @@ a:hover {
 }
 
 .aboutMe {
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   color: whitesmoke;
@@ -67,9 +67,10 @@ p {
 }
 .about-p {
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-top: 4rem;
+  color: black;
 }
 
 .main-text {
@@ -351,7 +352,6 @@ textarea {
   border-radius: 32px;
 }
 
-/* CSS */
 .button-84 {
   align-items: center;
   background-color: initial;
